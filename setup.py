@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pytorch-named-dims",
-    version="0.0.2",
+    name="pytorch_named_dims",
+    version="0.1.0",
     author="Piotr Migdał",
     author_email="pmigdal@gmail.com",
     description="PyTorch tensor dimension names for all nn.Modules",
@@ -20,6 +20,6 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        'pytorch>=1.5.0'
+        'torch>=1.4.0'
     ]
 )
