@@ -50,6 +50,7 @@ ConstantPad3d = nmc(nn.ConstantPad3d, [['N', 'C', 'D', 'H', 'W']])
 # NOTE: many function have, incorrectly, N* singature
 # they appear to affect names anyway, so I make them stay
 ReLU = nmc(nn.ReLU, [['*']])
+LogSigmoid = nmc(nn.LogSigmoid, [['*']])
 
 # Normalization layers
 BatchNorm0d = nmc(nn.BatchNorm1d, [['N', 'C']])  # not a typo, BatchNorm1d accepts NC or NCL
