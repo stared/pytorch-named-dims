@@ -103,7 +103,7 @@ PairwiseDistance = nmc(
 # Loss function
 L1Loss = nmc(nn.L1Loss, [['N', '*'], ['N', '*']], ['N', '*'], reduce_option=True)
 MSELoss = nmc(nn.MSELoss, [['N', '*'], ['N', '*']], ['N', '*'], reduce_option=True)
-CrossEntropyLoss = nmc(nn.CrossEntropyLoss, [['N', 'C' '*'], ['N', '*']], ['N', '*'], reduce_option=True)
+CrossEntropyLoss = nmc(nn.CrossEntropyLoss, [['N', 'C', '*'], ['N', '*']], ['N', '*'], reduce_option=True)
 CTCLoss = nmc(
     nn.CTCLoss, [['L', 'N', 'C'], ['N', 'S'], ['N'], ['N']], ['N'], reduce_option=True
 )  # in docs T instead of L
